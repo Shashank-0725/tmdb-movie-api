@@ -94,11 +94,6 @@ To reduce repeated TMDB calls:
 - Suitable for single-instance backend
 - Avoids unnecessary external API calls
 
-This improves:
-- Performance
-- Rate-limit safety
-- Response time
-
 ## 🎯 Recommendation Algorithm
 
 The recommendation system works as follows:
@@ -121,7 +116,7 @@ Ensure:
 2️⃣ **Create .env**
 ```
 PORT=8080
-MONGO_URI=mongodb://localhost:27017
+MONGO_URI=mongodb_uri
 JWT_SECRET=your_secret_key
 TMDB_API_KEY=your_tmdb_api_key
 ```
@@ -219,8 +214,7 @@ GET /recommend
 ## 🧪 Testing
 
 You can test using:
-- Postman
-- curl
+- ThunderClient
 - Browser for search endpoint
 
 ## 🤖 AI Assistance Disclosure
@@ -240,3 +234,4 @@ However, the following were performed independently:
 - Structuring final modular architecture
 
 AI was used as a productivity assistant, while system design understanding and implementation decisions remain my own.
+
